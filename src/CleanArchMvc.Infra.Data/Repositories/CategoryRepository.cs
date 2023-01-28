@@ -3,7 +3,7 @@ using CleanArchMvc.Domain.Interfaces;
 using CleanArchMvc.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchMvc.Infras.Data.Repositories;
+namespace CleanArchMvc.Infra.Data.Repositories;
 
 public class CategoryRepository : ICategoryRepository
 {
