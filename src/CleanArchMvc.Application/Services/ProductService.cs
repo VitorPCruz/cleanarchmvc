@@ -42,16 +42,16 @@ public class ProductService : IProductService
         return _mapper.Map<ProductDTO>(result);
     }
 
-    public async Task<ProductDTO> GetProductCategoryAsync(int? id)
-    {
-        var productQuery = new GetProductByIdQuery(id.Value);
+    //public async Task<ProductDTO> GetProductCategoryAsync(int? id)
+    //{
+    //    var productQuery = new GetProductByIdQuery(id.Value);
 
-        if (productQuery == null) throw new Exception("Entity could not be loaded.");
+    //    if (productQuery == null) throw new Exception("Entity could not be loaded.");
 
-        var result = await _mediator.Send(productQuery);
+    //    var result = await _mediator.Send(productQuery);
 
-        return _mapper.Map<ProductDTO>(result);
-    }
+    //    return _mapper.Map<ProductDTO>(result);
+    //}
 
     public async Task AddAsync(ProductDTO productDto)
     {
