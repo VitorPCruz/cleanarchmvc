@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMvc.Domain.Tests",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8BDC7678-D124-4842-8ACB-62157AED6D24}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{48E170A1-527B-4BA5-A081-326B4F78E1F6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,8 +52,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{92DB616F-89C9-4B8D-A62E-ABFB3296AAE5} = {48E170A1-527B-4BA5-A081-326B4F78E1F6}
-		{CAB5B393-81B3-4670-80A4-3C7061B9ECB0} = {48E170A1-527B-4BA5-A081-326B4F78E1F6}
 		{6856032D-CAE5-478E-B5E9-D7BE4C2896A2} = {8BDC7678-D124-4842-8ACB-62157AED6D24}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
