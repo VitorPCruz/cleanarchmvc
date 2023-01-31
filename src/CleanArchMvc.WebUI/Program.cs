@@ -3,9 +3,8 @@ using CleanArchMvc.Infra.IoC;
 
 #region Builder
 var builder = WebApplication.CreateBuilder(args);
-
 builder.Services.AddControllersWithViews();
-builder.Services.AddInfraestructure(builder.Configuration);
+builder.Services.AddInfrastructure(builder.Configuration);
 #endregion
 
 #region App

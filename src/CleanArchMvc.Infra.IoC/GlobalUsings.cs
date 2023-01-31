@@ -1,0 +1,13 @@
+global using CleanArchMvc.Application.Interfaces;
+global using CleanArchMvc.Application.Mappings;
+global using CleanArchMvc.Application.Services;
+global using CleanArchMvc.Domain.Account;
+global using CleanArchMvc.Domain.Interfaces;
+global using CleanArchMvc.Infra.Data.Context;
+global using CleanArchMvc.Infra.Data.Identity;
+global using CleanArchMvc.Infra.Data.Repositories;
+global using MediatR;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
