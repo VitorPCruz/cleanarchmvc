@@ -1,14 +1,15 @@
 ﻿using CleanArchMvc.Domain.Account;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArchMvc.WebUI.Controllers;
-
-public class AccountController : Controller
+namespace CleanArchMvc.WebUI.Controllers
 {
-    private readonly IAuthenticate _authentication;
-
-    public AccountController(IAuthenticate authentication)
+    public class AccountController : Controller
     {
-        _authentication = authentication;
+        private readonly IAuthenticate _authentication;
+
+        public AccountController(IAuthenticate authentication)
+        {
+            _authentication = authentication;
+        }
     }
 }
