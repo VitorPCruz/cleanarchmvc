@@ -1,8 +1,8 @@
 namespace CleanArchMvc.Infra.IoC;
 
-public static class DependencyInjection
+public static class DependencyInjectionAPI
 {
-    public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddInfrastructureAPI(this IServiceCollection services, IConfiguration configuration)
     {
         #region Database
         services.AddDbContext<ApplicationDbContext>(
@@ -16,10 +16,6 @@ public static class DependencyInjection
             .AddDefaultTokenProviders();
 
         services.AddScoped<IAuthenticate, AuthenticateService> ();
-        services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
-
-        services.ConfigureApplicationCookie(options =>
-            options.AccessDeniedPath = "/Account/Login");
         #endregion
 
         #region Services
